@@ -1,10 +1,5 @@
 #!/usr/bin/python3
-def square_matrix_simple(matrix=[]):
-    """Create a new matrix with the same size as the input matrix"""
-    result = [[0 for _ in range(len(row))] for row in matrix]
-
-    for i in range(len(matrix)):
-        for j in range(len(matrix[i])):
-            result[i][j] = matrix[i][j] ** 2
-
-    return result
+def search_replace(my_list, search, replace):
+    """function that replaces all occurrences of an element"""
+    new_list = list(map(lambda x: replace if x == search else x, my_list))
+    return (new_list)
